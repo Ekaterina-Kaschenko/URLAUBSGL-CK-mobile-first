@@ -1,0 +1,291 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, thead, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: ''; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff; }
+
+a {
+  color: #fff;
+  text-decoration: none; }
+
+.red {
+  background-color: #ff4e50; }
+
+.yellow {
+  background-color: #ffa507; }
+
+.green {
+  background-color: #1cd7ad; }
+
+.blue {
+  background-color: #4e73db; }
+
+.header {
+  background: url("../images/mobile/bg.png") center no-repeat;
+  text-align: center;
+  min-height: 540px;
+  background-size: cover; }
+
+.actions {
+  padding-top: 1.2em; }
+
+.button {
+  display: inline-block;
+  border-radius: 20px;
+  font-weight: 700;
+  padding: .5em; }
+
+.section {
+  min-width: 320px;
+  padding: 0 1em;
+  text-align: center; }
+  .section__text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    padding: 3px 35px;
+    line-height: 1.5em;
+    margin-bottom: .7em; }
+  .section__button {
+    padding: .6em 1.3em;
+    background-color: #ff4e50;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: .7em; }
+  .section__title {
+    font-size: 1.37em;
+    color: #000;
+    padding-top: 1.4em;
+    font-weight: 700;
+    padding-bottom: .7em;
+    line-height: 1.3em; }
+  .section__name {
+    color: #000;
+    font-weight: 700;
+    font-size: .9em;
+    margin: .8em; }
+
+.big-button {
+  width: 17em;
+  padding: .8em;
+  text-transform: none;
+  font-size: inherit; }
+
+.signUp {
+  border: 3px solid #fff; }
+
+.title {
+  font-size: 1.3em;
+  padding-top: 5.5em;
+  padding-bottom: 1.4em; }
+
+.special-title {
+  font-size: 1.9em;
+  text-transform: uppercase;
+  line-height: 1.3em; }
+
+.block__item {
+  width: 300px;
+  height: 240px;
+  background-size: cover;
+  margin: 0 auto;
+  padding-top: 3em;
+  border-radius: 10px;
+  margin-bottom: .5em;
+  text-align: left; }
+
+.block__title {
+  font-size: 1.5em;
+  margin-top: .7em;
+  line-height: 1.2em; }
+
+.block__text {
+  color: #b3b2b1;
+  font-size: .9em;
+  padding: 0;
+  margin-top: 1em;
+  line-height: 1.3em; }
+
+.step1 {
+  background-image: url("../images/mobile/pic1.jpg"); }
+
+.step2 {
+  background-image: url("../images/mobile/pic2.jpg"); }
+
+.step3 {
+  background-image: url("../images/mobile/pic3.jpg"); }
+
+.partners__profile {
+  position: relative; }
+
+.partners__item {
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 1.4em; }
+
+.partners__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+  bottom: 0;
+  right: 2em; }
+
+.partners__button {
+  width: 17em;
+  padding: .8em;
+  text-transform: none;
+  font-size: inherit;
+  color: #ff4e50;
+  border: 2px solid #ff4e50; }
+
+.activity {
+  width: 18.5em;
+  margin: 0 auto; }
+  .activity__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background-size: cover;
+    border-radius: 10px;
+    margin-bottom: .6em; }
+  .activity__title {
+    color: #fff;
+    padding: 0; }
+  .activity .sport {
+    background: url("../images/mobile/activity1.jpg") 100% 100% no-repeat; }
+  .activity .health {
+    background: url("../images/mobile/activity2.jpg") 100% 100% no-repeat; }
+  .activity .extreme {
+    background: url("../images/mobile/activity3.jpg") 100% 100% no-repeat; }
+  .activity .games {
+    background: url("../images/mobile/activity4.jpg") 100% 100% no-repeat; }
+  .activity .culture {
+    background: url("../images/mobile/activity5.jpg") 100% 100% no-repeat; }
+  .activity .relax {
+    background: url("../images/mobile/activity6.jpg") 100% 100% no-repeat; }
+  .activity .travelling {
+    background: url("../images/mobile/activity7.jpg") 100% 100% no-repeat; }
+
+.interest-title {
+  color: #000;
+  font-family: 'Roboto', sans-serif; }
+
+.interests {
+  width: 18.5em;
+  padding: .8em;
+  margin: .7em 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none; }
+
+.footer {
+  border-top: 5px solid #ff4e50;
+  margin-top: 2.3em;
+  text-align: center;
+  padding: 1.2em; }
+  .footer__title {
+    color: #ff4e50;
+    font-weight: 700; }
+  .footer__text {
+    color: #d9d9d9;
+    text-transform: uppercase;
+    font-size: .7em;
+    margin-bottom: 1em; }
+
+.navigation__item {
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  font-weight: 300;
+  font-size: .9em;
+  padding: 0 .3em; }
+
+.carousel-cell {
+  width: 100%;
+  padding: 1em; }
+
+/* Ensures that Flickity waits until CSS has loaded to calculate the height of the cells */
+.carousel:after {
+  content: 'flickity';
+  display: none;
+  /* hide :after */ }
+
+.flickity-page-dots {
+  display: none; }
+
+.flickity-prev-next-button {
+  background: none !important; }
+
+.sprite {
+  background-image: url(../images/spritesheet.png);
+  background-repeat: no-repeat;
+  display: inline-block; }
+
+.sprite-coffee {
+  width: 16px;
+  height: 17px;
+  background-position: -5px -5px; }
+
+.sprite-jar {
+  width: 13px;
+  height: 16px;
+  background-position: -31px -5px; }
+
+.sprite-plane {
+  width: 17px;
+  height: 16px;
+  background-position: -31px -31px; }
+
+.sprite-tv {
+  width: 17px;
+  height: 17px;
+  background-position: -58px -5px; }

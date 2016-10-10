@@ -1,0 +1,278 @@
+body {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.red {
+  background-color: #ff4e50;
+}
+
+.yellow {
+  background-color: #ffa507;
+}
+
+.green {
+  background-color: #1cd7ad;
+}
+
+.blue {
+  background-color: #4e73db;
+}
+
+.header {
+  background: url('../images/mobile/bg.png') center no-repeat;
+  text-align: center;
+  min-height: 540px;
+  background-size: cover;
+}
+
+.actions {
+  padding-top: 1.2em;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 20px;
+  font-weight: 700;
+  padding: .5em;
+
+}
+
+
+
+.section {
+  min-width: 320px;
+  padding: 0 1em;
+  text-align: center;
+
+  &__text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    padding: 3px 35px;
+    line-height: 1.5em;
+    margin-bottom: .7em;
+  }
+
+  &__button {
+    padding: .6em 1.3em;
+    background-color: #ff4e50;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: .7em;
+  }
+
+  &__title {
+    font-size: 1.37em;
+    color: #000;
+    padding-top: 1.4em;
+    font-weight: 700;
+    padding-bottom: .7em;
+    line-height: 1.3em;
+  }
+
+  &__name {
+    color: #000;
+    font-weight: 700;
+    font-size: .9em;
+    margin: .8em;
+  }
+}
+
+.big-button {
+  width: 17em;
+  padding: .8em;
+  text-transform: none;
+  font-size: inherit;
+}
+
+.find-partner {
+  
+}
+
+.signUp {
+  border: 3px solid #fff;
+}
+
+.title {
+  font-size: 1.3em;
+  padding-top: 5.5em;
+  padding-bottom: 1.4em;
+}
+
+.special-title {
+  font-size: 1.9em;
+  text-transform: uppercase;
+  line-height: 1.3em;
+}
+
+.block {
+  &__item {
+    width: 300px;
+    height: 240px;
+    background-size: cover;
+    margin: 0 auto;
+    padding-top: 3em;
+    border-radius: 10px;
+    margin-bottom: .5em;
+    text-align: left;
+  }
+
+
+  &__title {
+    font-size: 1.5em;
+    margin-top: .7em;
+    line-height: 1.2em;
+  }
+
+  &__text {
+    color: #b3b2b1;
+    font-size: .9em;
+    padding: 0;
+    margin-top: 1em;
+    line-height: 1.3em;
+  }
+
+}
+
+.step1 {
+  background-image: url('../images/mobile/pic1.jpg');
+}
+
+.step2 {
+  background-image: url('../images/mobile/pic2.jpg');
+}
+
+.step3 {
+  background-image: url('../images/mobile/pic3.jpg');
+}
+
+.partners {
+
+  &__profile {
+    position: relative;
+  }
+
+  &__item {
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 1.4em;
+  }
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    bottom: 0;
+    right: 2em;
+  }
+
+  &__button {
+    width: 17em;
+    padding: .8em;
+    text-transform: none;
+    font-size: inherit;
+    color: #ff4e50;
+    border: 2px solid #ff4e50; 
+  }
+}
+
+.activity {
+  width: 18.5em;
+  margin: 0 auto;
+  
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background-size: cover;
+    border-radius: 10px;
+    margin-bottom: .6em;
+
+  }
+
+  &__title {
+    color: #fff;
+    padding: 0;
+  }
+
+  & .sport {
+    background: url('../images/mobile/activity1.jpg') 100% 100% no-repeat;
+  }
+
+  & .health {
+    background: url('../images/mobile/activity2.jpg') 100% 100% no-repeat;
+  }
+
+  & .extreme {
+    background: url('../images/mobile/activity3.jpg') 100% 100% no-repeat;
+  }
+
+  & .games {
+    background: url('../images/mobile/activity4.jpg') 100% 100% no-repeat;
+  }
+
+  & .culture {
+    background: url('../images/mobile/activity5.jpg') 100% 100% no-repeat;
+  }
+
+  & .relax {
+    background: url('../images/mobile/activity6.jpg') 100% 100% no-repeat;
+  }
+
+  & .travelling {
+    background: url('../images/mobile/activity7.jpg') 100% 100% no-repeat;
+  }
+}
+
+.interest-title {
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+}
+
+.interests {
+  width: 18.5em;
+  padding: .8em;
+  margin: .7em 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}    
+
+.footer {
+  border-top: 5px solid #ff4e50;
+  margin-top: 2.3em;
+  text-align: center;
+  padding: 1.2em;
+
+  &__title {
+    color: #ff4e50;
+    font-weight: 700;
+  }
+
+  &__text {
+    color: #d9d9d9;
+    text-transform: uppercase;
+    font-size: .7em;
+    margin-bottom: 1em;
+
+  }
+}
+
+.navigation__item {
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  font-weight: 300;
+  font-size: .9em;
+  padding: 0 .3em
+}

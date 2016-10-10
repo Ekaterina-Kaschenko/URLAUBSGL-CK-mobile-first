@@ -1,0 +1,29 @@
+.sprite {
+    background-image: url(../images/spritesheet.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.sprite-coffee {
+    width: 16px;
+    height: 17px;
+    background-position: -5px -5px;
+}
+
+.sprite-jar {
+    width: 13px;
+    height: 16px;
+    background-position: -31px -5px;
+}
+
+.sprite-plane {
+    width: 17px;
+    height: 16px;
+    background-position: -31px -31px;
+}
+
+.sprite-tv {
+    width: 17px;
+    height: 17px;
+    background-position: -58px -5px;
+}
