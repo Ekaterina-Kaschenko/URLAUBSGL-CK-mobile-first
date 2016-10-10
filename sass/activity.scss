@@ -1,0 +1,48 @@
+.activity {
+  width: 18.5em;
+  margin: 0 auto;
+  
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background-size: cover;
+    border-radius: 10px;
+    margin-bottom: .6em;
+
+  }
+
+  &__title {
+    color: #fff;
+    padding: 0;
+  }
+
+  & .sport {
+    background: url('../images/ideas_bg1.jpg') 100% 100% no-repeat;
+  }
+
+  & .health {
+    background: url('../images/ideas_bg2.jpg') 100% 100% no-repeat;
+  }
+
+  & .extreme {
+    background: url('../images/ideas_bg3.jpg') 100% 100% no-repeat;
+  }
+
+  & .games {
+    background: url('../images/ideas_bg4.jpg') 100% 100% no-repeat;
+  }
+
+  & .culture {
+    background: url('../images/ideas_bg5.jpg') 100% 100% no-repeat;
+  }
+
+  & .relax {
+    background: url('../images/ideas_bg6.jpg') 100% 100% no-repeat;
+  }
+
+  & .travelling {
+    background: url('../images/ideas_bg7.jpg') 100% 100% no-repeat;
+  }
+}

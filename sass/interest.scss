@@ -1,0 +1,19 @@
+.interest {
+  &__input {
+    width: 18.5em;
+    padding: .8em;
+    margin: .7em 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+
+  &__title {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  &__button:hover {
+    color: $red;
+  }
+}  

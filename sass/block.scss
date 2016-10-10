@@ -1,0 +1,28 @@
+.block {
+  &__item {
+    width: 300px;
+    height: 240px;
+    background-size: cover;
+    margin: 0 auto;
+    padding-top: 3em;
+    border-radius: 10px;
+    margin-bottom: .5em;
+    text-align: left;
+  }
+
+
+  &__title {
+    font-size: 1.5em;
+    margin-top: .7em;
+    line-height: 1.2em;
+  }
+
+  &__text {
+    color: #b3b2b1;
+    font-size: .9em;
+    padding: 0;
+    margin-top: 1em;
+    line-height: 1.3em;
+  }
+
+}

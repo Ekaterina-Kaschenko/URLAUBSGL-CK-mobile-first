@@ -66,20 +66,16 @@ a {
 .blue {
   background-color: #4e73db; }
 
-.header {
-  background: url("../images/mobile/bg.png") center no-repeat;
-  text-align: center;
-  min-height: 540px;
-  background-size: cover; }
-
-.actions {
-  padding-top: 1.2em; }
-
 .button {
   display: inline-block;
   border-radius: 20px;
   font-weight: 700;
-  padding: .5em; }
+  padding: .5em;
+  transition: .2s ease; }
+  .button:hover {
+    background: transparent;
+    color: #ff4e50;
+    transition: .2s ease; }
 
 .section {
   min-width: 320px;
@@ -96,7 +92,14 @@ a {
     background-color: #ff4e50;
     font-weight: 400;
     text-transform: uppercase;
-    font-size: .7em; }
+    font-size: .7em;
+    transition: .2s ease;
+    border: 4px solid #ff4e50;
+    cursor: pointer; }
+    .section__button:hover {
+      background: transparent;
+      color: #fff;
+      transition: .2s ease; }
   .section__title {
     font-size: 1.37em;
     color: #000;
@@ -121,13 +124,70 @@ a {
 
 .title {
   font-size: 1.3em;
-  padding-top: 5.5em;
-  padding-bottom: 1.4em; }
+  margin-top: 5.5em;
+  margin-bottom: 1.4em; }
 
 .special-title {
   font-size: 1.9em;
   text-transform: uppercase;
   line-height: 1.3em; }
+
+.navigation__item {
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  font-weight: 300;
+  font-size: .9em;
+  padding: 0 .3em; }
+
+.sprite {
+  background-image: url(../images/spritesheet.png);
+  background-repeat: no-repeat;
+  display: inline-block; }
+
+.sprite-coffee {
+  width: 16px;
+  height: 17px;
+  background-position: -5px -5px; }
+
+.sprite-jar {
+  width: 13px;
+  height: 16px;
+  background-position: -31px -5px; }
+
+.sprite-plane {
+  width: 17px;
+  height: 16px;
+  background-position: -31px -31px; }
+
+.sprite-tv {
+  width: 17px;
+  height: 17px;
+  background-position: -58px -5px; }
+
+.carousel-cell {
+  width: 100%;
+  padding: 1em; }
+
+/* Ensures that Flickity waits until CSS has loaded to calculate the height of the cells */
+.carousel:after {
+  content: 'flickity';
+  display: none;
+  /* hide :after */ }
+
+.flickity-page-dots {
+  display: none; }
+
+.flickity-prev-next-button {
+  background: none !important; }
+
+.header {
+  background: url("../images/mobile/bg.png") center no-repeat;
+  text-align: center;
+  min-height: 540px;
+  background-size: cover; }
+
+.actions {
+  padding-top: 1.2em; }
 
 .block__item {
   width: 300px;
@@ -159,6 +219,21 @@ a {
 
 .step3 {
   background-image: url("../images/mobile/pic3.jpg"); }
+
+.interest__input {
+  width: 18.5em;
+  padding: .8em;
+  margin: .7em 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none; }
+
+.interest__title {
+  color: #000;
+  font-family: 'Roboto', sans-serif; }
+
+.interest__button:hover {
+  color: #ff4e50; }
 
 .partners__profile {
   position: relative; }
@@ -202,31 +277,19 @@ a {
     color: #fff;
     padding: 0; }
   .activity .sport {
-    background: url("../images/mobile/activity1.jpg") 100% 100% no-repeat; }
+    background: url("../images/ideas_bg1.jpg") 100% 100% no-repeat; }
   .activity .health {
-    background: url("../images/mobile/activity2.jpg") 100% 100% no-repeat; }
+    background: url("../images/ideas_bg2.jpg") 100% 100% no-repeat; }
   .activity .extreme {
-    background: url("../images/mobile/activity3.jpg") 100% 100% no-repeat; }
+    background: url("../images/ideas_bg3.jpg") 100% 100% no-repeat; }
   .activity .games {
-    background: url("../images/mobile/activity4.jpg") 100% 100% no-repeat; }
+    background: url("../images/ideas_bg4.jpg") 100% 100% no-repeat; }
   .activity .culture {
-    background: url("../images/mobile/activity5.jpg") 100% 100% no-repeat; }
+    background: url("../images/ideas_bg5.jpg") 100% 100% no-repeat; }
   .activity .relax {
-    background: url("../images/mobile/activity6.jpg") 100% 100% no-repeat; }
+    background: url("../images/ideas_bg6.jpg") 100% 100% no-repeat; }
   .activity .travelling {
-    background: url("../images/mobile/activity7.jpg") 100% 100% no-repeat; }
-
-.interest-title {
-  color: #000;
-  font-family: 'Roboto', sans-serif; }
-
-.interests {
-  width: 18.5em;
-  padding: .8em;
-  margin: .7em 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  outline: none; }
+    background: url("../images/ideas_bg7.jpg") 100% 100% no-repeat; }
 
 .footer {
   border-top: 5px solid #ff4e50;
@@ -242,50 +305,52 @@ a {
     font-size: .7em;
     margin-bottom: 1em; }
 
-.navigation__item {
-  font-family: 'Roboto', sans-serif;
-  color: #000;
-  font-weight: 300;
-  font-size: .9em;
-  padding: 0 .3em; }
-
-.carousel-cell {
-  width: 100%;
-  padding: 1em; }
-
-/* Ensures that Flickity waits until CSS has loaded to calculate the height of the cells */
-.carousel:after {
-  content: 'flickity';
-  display: none;
-  /* hide :after */ }
-
-.flickity-page-dots {
-  display: none; }
-
-.flickity-prev-next-button {
-  background: none !important; }
-
-.sprite {
-  background-image: url(../images/spritesheet.png);
-  background-repeat: no-repeat;
-  display: inline-block; }
-
-.sprite-coffee {
-  width: 16px;
-  height: 17px;
-  background-position: -5px -5px; }
-
-.sprite-jar {
-  width: 13px;
-  height: 16px;
-  background-position: -31px -5px; }
-
-.sprite-plane {
-  width: 17px;
-  height: 16px;
-  background-position: -31px -31px; }
-
-.sprite-tv {
-  width: 17px;
-  height: 17px;
-  background-position: -58px -5px; }
+@media only screen and (min-device-width: 480px) {
+  body {
+    font-size: 14px; }
+  .title {
+    margin: 0;
+    padding-top: 1.2em;
+    float: left; }
+  .section-row {
+    overflow: hidden;
+    padding: 0 1em; }
+  .actions {
+    float: right; }
+  .special-title {
+    margin-top: 5.5em; }
+  .block {
+    display: flex;
+    justify-content: space-between; }
+    .block__item {
+      width: 31%; }
+  .partners {
+    display: block; }
+    .partners__item {
+      display: inline-block;
+      vertical-align: top;
+      border: 1px solid red; }
+      .partners__item-container {
+        width: 49%;
+        display: inline-block;
+        border: 1px solid blue; }
+  .activity {
+    width: 100%; }
+    .activity__item {
+      display: inline-block;
+      height: 310px; }
+      .activity__item--1 {
+        width: 32%; }
+      .activity__item--2 {
+        width: 64%; }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em; }
+  .section__name {
+    margin: 0; }
+  .navigation {
+    text-align: left; }
+    .navigation__item {
+      display: block;
+      padding: 0; } }

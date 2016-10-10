@@ -1,0 +1,88 @@
+@media only screen and (min-device-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .title {
+    margin: 0;
+    padding-top: 1.2em;
+    float: left;
+  }
+
+  .section-row {
+    overflow: hidden;
+    padding: 0 1em;
+  }
+
+  .actions {
+    float: right;
+  }
+
+  .special-title {
+    margin-top: 5.5em;
+  }
+
+  .block {
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+      width: 31%;
+    }
+
+  }
+
+  .partners {
+    display: block;
+
+    &__item {
+      display: inline-block;
+      vertical-align: top;
+      border: 1px solid red;
+      
+      &-container {
+        width: 49%;
+        display: inline-block;
+        border: 1px solid blue;
+      }
+    }
+
+
+  }
+
+  .activity { 
+    width: 100%;
+
+    &__item {
+      display: inline-block;
+      height: 310px;
+      // margin: 5px;
+
+      &--1 {
+        width: 32%; 
+      }
+
+      &--2 { 
+        width: 64%; 
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+  }
+
+  .section__name {
+    margin: 0;
+  }
+
+  .navigation {
+    text-align: left;
+    &__item {
+      display: block;
+      padding: 0;
+    }
+  }
+}
