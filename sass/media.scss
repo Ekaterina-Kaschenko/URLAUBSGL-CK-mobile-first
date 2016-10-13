@@ -1,4 +1,4 @@
-@media only screen and (min-width: 768px) and (max-width: 1023px)  {
+@media only screen and (min-width: 768px)  {
   body {
     font-size: 18px;
   }
@@ -199,13 +199,91 @@
 }
 
 @media only screen and (min-device-width: 1024px) {
-  .partners {
-    &__item {
+  body {
+    font-size: 14px;
+  }
 
-      &-container {
-        width: 23%;
-      }
+  .header {
+    min-height: 500px;
+  }
+
+  .section {
+    &-row {
+      padding: 1em 10em;
+    }
+
+    &__title {
+      padding-top: 3.5em;
+    }
+
+    &__name {
+      font-size: .6em;
     }
   }
+
+  .block {
+    width: 50em;
+    margin: 0 auto;
+
+    &__item {
+      height: 300px;
+    }
+
+    &__text {
+      width: 200%;
+      margin-left: -45px;
+    }
+  }
+
+  .special-title {
+    margin-top: 2em;
+    font-size: 2.8em;
+    font-weight: 700;
+    padding: 0 7.4em;
+  }
+  
+
+  .partners {
+    &-container {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &__item {
+      width: 85px;
+
+      &-container {
+        
+        width: 20%;
+      }
+    }
+
+    &__profile img {
+      width: 100%;
+    }
+
+    &__icon {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      right: 0;
+    }
+
+    &__name {
+      margin: 1.5em 0;
+    }
+
+    &__button {
+      width: 14em;
+      padding: .6em;
+      font-size: .7em;
+      margin-top: 0;
+    }
+  }
+
+  .footer-wide {
+    display: inline-block;
+  }
+
 }
 
