@@ -273,9 +273,7 @@ a {
     background-size: cover;
     border-radius: 10px;
     margin-bottom: .6em;
-    width: 100%;
-    border: 3px solid red;
-    box-sizing: border-box; }
+    width: 100%; }
   .activity__title {
     color: #fff;
     padding: 0; }
@@ -409,17 +407,16 @@ a {
     .interest__button {
       width: 11em; }
   .activity {
-    width: 100%;
-    border: 2px solid green; }
+    width: 100%; }
     .activity__item {
       display: inline-block;
       height: 300px;
       margin: 5px;
       background-size: cover; }
       .activity__item--1 {
-        width: 32%; }
+        width: 31%; }
       .activity__item--2 {
-        width: 66%; }
+        width: 65%; }
   .footer {
     display: flex;
     justify-content: space-between;
