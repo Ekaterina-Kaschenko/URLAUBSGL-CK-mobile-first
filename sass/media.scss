@@ -1,6 +1,6 @@
-@media only screen and (min-device-width: 480px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px)  {
   body {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .title {
@@ -9,17 +9,66 @@
     float: left;
   }
 
-  .section-row {
-    overflow: hidden;
-    padding: 0 1em;
+  .header {
+    min-height: 700px;
+  }
+
+  .section {
+    &-row {
+      overflow: hidden;
+      padding: 1em 1.5em;
+    }
+    
+    &__text {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.3em;
+      padding: 3px 35px;
+      line-height: 1.5em;
+      margin: .6em;
+    }
+
+    &__title {
+      font-size: 1.2em;
+      padding-top: 4.2em;
+      padding-bottom: 1.5em;
+      line-height: 1.3em;
+    }
+
+    &__button {
+      padding: .4em 1.4em;
+      font-size: .5em;
+      letter-spacing: 1px;
+    }
+
+    &__name {
+      margin: 0;
+    }
+  }
+
+  .big-button {
+    width: 16em;
+    padding: .6em 0;
+    text-transform: none;
+    font-size: inherit;
+    font-size: .8em;
+    margin-top: .7em;
+  }
+
+  .signUp {
+    margin-left: 1em;
+    padding: .5em 1.2em;
   }
 
   .actions {
     float: right;
+    font-size: .8em;
   }
 
   .special-title {
-    margin-top: 5.5em;
+    margin-top: 2.5em;
+    font-size: 2.8em;
+    font-weight: 700;
+    padding: 0 2.4em;
   }
 
   .block {
@@ -28,8 +77,36 @@
 
     &__item {
       width: 31%;
+      height: 400px;
+      padding-top: 10.8em;
     }
 
+    &__title {
+      font-size: 1.3em;
+    }
+
+    &__text {
+      font-size: .73em;
+      padding: 0;
+      margin: 0;
+    }
+
+  }
+
+  .flickity-prev-next-button {
+    width: 72px;
+    height: 67px;
+    position: absolute;
+    top: 4em;
+
+    & .previous {
+      left: 0px;
+    }
+
+    & .next {
+      right: 0;
+    }
+    
   }
 
   .partners {
@@ -38,51 +115,97 @@
     &__item {
       display: inline-block;
       vertical-align: top;
-      border: 1px solid red;
-      
+     
       &-container {
-        width: 49%;
+        width: 35%;
         display: inline-block;
-        border: 1px solid blue;
       }
     }
 
+    &__button {
+      width: 12em;
+      padding: .4em;
+      margin-top: 2em;
+    }
 
-  }
-
-  .activity { 
-    width: 100%;
-
-    &__item {
-      display: inline-block;
-      height: 310px;
-      // margin: 5px;
-
-      &--1 {
-        width: 32%; 
-      }
-
-      &--2 { 
-        width: 64%; 
-      }
+    &__name {
+      margin: .7em;
     }
   }
+
+  .interest {
+    padding-bottom: 2.8em;
+    margin-top: 3em;
+    
+    &__title {
+      margin-bottom: 1.6em;
+    }
+
+    &__input {
+      margin-right: 1em;
+      width: 15em;
+    }
+
+    &__button {
+      width: 11em;
+    }
+  }
+
+  // .activity { 
+  //   width: 100%;
+
+  //   &__item {
+  //     display: inline-block;
+  //     height: 310px;
+  //     margin: 5px;
+
+  //     &--1 {
+  //       width: 32%; 
+  //     }
+
+  //     &--2 { 
+  //       width: 66%; 
+  //     }
+  //   }
+  // }
 
   .footer {
     display: flex;
     justify-content: space-between;
     padding: 2em;
-  }
+    // margin-top: 5em;
 
-  .section__name {
-    margin: 0;
+    &__text {
+      text-align: right;
+    }
   }
 
   .navigation {
     text-align: left;
+    line-height: 1.7em;
+    font-size: .8em;
+    margin-top: .6em;
+
     &__item {
       display: block;
       padding: 0;
     }
   }
+
+  .logo {
+    margin-right: 10px;
+  }
+
 }
+
+@media only screen and (min-device-width: 1024px) {
+  .partners {
+    &__item {
+
+      &-container {
+        width: 23%;
+      }
+    }
+  }
+}
+
