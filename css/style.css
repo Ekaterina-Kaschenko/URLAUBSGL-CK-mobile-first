@@ -139,9 +139,6 @@ a {
   font-size: .9em;
   padding: 0 .3em; }
 
-.footer-wide {
-  display: inline-block; }
-
 .sprite {
   background-image: url(../images/spritesheet.png);
   background-repeat: no-repeat;
@@ -267,10 +264,7 @@ a {
 
 .activity {
   width: 18.5em;
-  margin: 0 auto;
-  height: 400px;
-  border: 3px solid red;
-  overflow: hidden; }
+  margin: 0 auto; }
   .activity__item {
     display: flex;
     justify-content: center;
@@ -279,24 +273,33 @@ a {
     background-size: cover;
     border-radius: 10px;
     margin-bottom: .6em;
-    width: 100%; }
+    width: 100%;
+    border: 3px solid red;
+    box-sizing: border-box; }
   .activity__title {
     color: #fff;
     padding: 0; }
   .activity .sport {
-    background: url("../images/ideas_bg1.jpg") 100% 100% no-repeat; }
+    background: url("../images/ideas_bg1.jpg") 100% 100% no-repeat;
+    background-size: cover; }
   .activity .health {
-    background: url("../images/ideas_bg2.jpg") 100% 100% no-repeat; }
+    background: url("../images/ideas_bg2.jpg") 100% 100% no-repeat;
+    background-size: cover; }
   .activity .extreme {
-    background: url("../images/ideas_bg3.jpg") 100% 100% no-repeat; }
+    background: url("../images/ideas_bg3.jpg") 100% 100% no-repeat;
+    background-size: cover; }
   .activity .games {
-    background: url("../images/ideas_bg4.jpg") 100% 100% no-repeat; }
+    background: url("../images/ideas_bg4.jpg") 100% 100% no-repeat;
+    background-size: cover; }
   .activity .culture {
-    background: url("../images/ideas_bg5.jpg") 100% 100% no-repeat; }
+    background: url("../images/ideas_bg5.jpg") 100% 100% no-repeat;
+    background-size: cover; }
   .activity .relax {
-    background: url("../images/ideas_bg6.jpg") 100% 100% no-repeat; }
+    background: url("../images/ideas_bg6.jpg") 100% 100% no-repeat;
+    background-size: cover; }
   .activity .travelling {
-    background: url("../images/ideas_bg7.jpg") 100% 100% no-repeat; }
+    background: url("../images/ideas_bg7.jpg") 100% 100% no-repeat;
+    background-size: cover; }
 
 .footer {
   border-top: 5px solid #ff4e50;
@@ -405,6 +408,18 @@ a {
       width: 15em; }
     .interest__button {
       width: 11em; }
+  .activity {
+    width: 100%;
+    border: 2px solid green; }
+    .activity__item {
+      display: inline-block;
+      height: 300px;
+      margin: 5px;
+      background-size: cover; }
+      .activity__item--1 {
+        width: 32%; }
+      .activity__item--2 {
+        width: 66%; }
   .footer {
     display: flex;
     justify-content: space-between;
@@ -422,9 +437,12 @@ a {
   .logo {
     margin-right: 10px; } }
 
-@media only screen and (min-device-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   body {
     font-size: 14px; }
+  .big-button {
+    width: 18em;
+    padding: .6em; }
   .header {
     min-height: 500px; }
   .section-row {
@@ -438,9 +456,6 @@ a {
     margin: 0 auto; }
     .block__item {
       height: 300px; }
-    .block__text {
-      width: 200%;
-      margin-left: -45px; }
   .special-title {
     margin-top: 2em;
     font-size: 2.8em;
@@ -467,5 +482,10 @@ a {
     padding: .6em;
     font-size: .7em;
     margin-top: 0; }
-  .footer-wide {
-    display: inline-block; } }
+  .partners__text {
+    width: 200%;
+    margin-left: -45px; }
+  .footer__item:last-child {
+    margin-left: 20em; }
+  .flickity-prev-next-button {
+    top: 10em; } }
