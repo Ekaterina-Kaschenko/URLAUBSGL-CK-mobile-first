@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {
-    "browser-sync": "^2.12.3"
-  },
+  "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.12.3",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
     "gulp-sass": "^2.3.1",
     "postcss-flexibility": "^1.1.0"
   },
