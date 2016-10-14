@@ -450,10 +450,7 @@ a {
     line-height: 1.5em;
     margin: .6em; }
   .section__title {
-    font-size: 1.2em;
-    padding-top: 4.2em;
-    padding-bottom: 1.5em;
-    line-height: 1.3em; }
+    font-size: 1.2em; }
   .section__button {
     padding: .4em 1.4em;
     font-size: .5em;
@@ -527,14 +524,17 @@ a {
   .activity {
     width: 100%; }
     .activity__item {
-      display: inline-block;
+      display: inline-flex;
       height: 300px;
       margin: 5px;
-      background-size: cover; }
+      background-size: cover;
+      vertical-align: middle; }
       .activity__item--1 {
         width: 31%; }
       .activity__item--2 {
         width: 65%; }
+    .activity__title {
+      padding-top: 0; }
   .footer {
     display: flex;
     justify-content: space-between;

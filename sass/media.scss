@@ -29,9 +29,9 @@
 
     &__title {
       font-size: 1.2em;
-      padding-top: 4.2em;
-      padding-bottom: 1.5em;
-      line-height: 1.3em;
+      // padding-top: 4.2em;
+      // padding-bottom: 1.5em;
+      // line-height: 1.3em;
     }
 
     &__button {
@@ -153,12 +153,13 @@
 
   .activity { 
     width: 100%;
-    // border: 2px solid green;
+  
     &__item {
-      display: inline-block;
+      display: inline-flex;
       height: 300px;
       margin: 5px;
       background-size: cover;
+      vertical-align: middle;
 
       &--1 {
         width: 31%; 
@@ -167,6 +168,10 @@
       &--2 { 
         width: 65%; 
       }
+    }
+
+    &__title {
+      padding-top: 0;
     }
   }
 
