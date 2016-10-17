@@ -582,10 +582,34 @@ a {
     width: 85px; }
     .partners__item-container {
       width: 20%; }
+  .section__title {
+    padding-top: 4.4em;
+    padding-bottom: 1.5em; }
   .footer__item:last-child {
     margin-left: 16em; }
   .flickity-prev-next-button {
     top: 10em; }
+  .partners-container {
+    display: flex;
+    justify-content: space-around; }
+  .partners__item {
+    width: 85px; }
+    .partners__item-container {
+      width: 20%; }
+  .partners__profile img {
+    width: 100%; }
+  .partners__icon {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    right: 0; }
+  .partners__name {
+    margin: 1.5em 0; }
+  .partners__button {
+    width: 14em;
+    padding: .6em;
+    font-size: .7em;
+    margin-top: 0; }
   .partners__text {
     width: 200%;
     margin-left: -45px; } }
