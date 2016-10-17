@@ -13,8 +13,10 @@
     font-family: 'Roboto', sans-serif;
   }
 
-  &__button:hover {
-    // color: $red;
-    opacity: .8;
+  &__button {
+    color: #fff;
+    &:hover {
+      opacity: .8;
+    }
   }
 }  

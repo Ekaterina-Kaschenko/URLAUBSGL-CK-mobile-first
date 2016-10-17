@@ -212,25 +212,25 @@
           Discover holiday activity ideas
         </p>
         <div class="activity">
-          <a class="activity__item activity__item--1 sport" href="#">
+          <a class="activity__item activity__item--1 sport" data-class="sport" href="#">
             <p class="section__title activity__title">Sport and Activity</p>
           </a>
-          <a class="activity__item activity__item--1 health" href="#">
+          <a class="activity__item activity__item--1 health" data-class="health" href="#">
             <p class="section__title activity__title">Wellnes and Health</p>
           </a>
-          <a class="activity__item activity__item--1 extreme" href="#">
+          <a class="activity__item activity__item--1 extreme" data-class="extreme" href="#">
             <p class="section__title activity__title">Extreme Sports and Expeditions</p>
           </a>
-          <a class="activity__item activity__item--1 games" href="#">
+          <a class="activity__item activity__item--1 games" data-class="games" href="#">
             <p class="section__title activity__title">Games</p>
           </a>
-          <a class="activity__item activity__item--2 culture" href="#">
+          <a class="activity__item activity__item--2 culture" data-class="culture" href="#">
             <p class="section__title activity__title">Culture and Education</p>
           </a>
-          <a class="activity__item activity__item--2 relax" href="#">
+          <a class="activity__item activity__item--2 relax" data-class="relax" href="#">
             <p class="section__title activity__title">Relaxation</p>
           </a>
-          <a class="activity__item activity__item--1 travelling" href="#">
+          <a class="activity__item activity__item--1 travelling" data-class="travelling" href="#">
             <p class="section__title activity__title">Travellingy</p>
           </a>
         </div>
@@ -242,10 +242,12 @@
         <p class="interest__title">
           Hi! What are your holiday interests?
         </p>
-        <input type="text" class="interest__input" placeholder="Enter your interests" />
-        <a class="button section__button big-button interest__button" href="#">
-          Search partners
-        </a>
+        <form>
+          <input type="text" class="interest__input" placeholder="Enter your interests" />
+          <button class="button section__button big-button interest__button">
+            Search partners
+          </button>
+        </form>
       </section>
       <footer class="footer">
         <div class="footer-section">
@@ -281,6 +283,8 @@
     </div>
     <script src="scripts/vendor/Flickity/flickity.pkgd.min.js"></script>
     <script src="scripts/vendor/masonry.js"></script>
-   <script src="scripts/vendor/flexibility.js"></script>
+    <script src="scripts/vendor/flexibility.js"></script>
+    <script src="scripts/slider.js"></script>
+    <script src="scripts/search.js"></script>
   </body>
 </html>

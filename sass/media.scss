@@ -164,8 +164,9 @@
       display: inline-flex;
       height: 300px;
       margin: 5px;
-      background-size: cover;
+      background-size: cover !important;
       vertical-align: middle;
+
 
       &--1 {
         width: 31%; 
@@ -216,93 +217,20 @@
 }
 
 @media only screen and (min-width: 948px) {
-  // body {
-  //   font-size: 14px;
-  // }
+  .partners {
+    &-container {
+      display: flex;
+      justify-content: space-around;
+    }
 
-  // .big-button {
-  //   width: 18em;
-  //   padding: .6em;
-  // }
+    &__item {
+      width: 85px;
 
-  // .header {
-  //   min-height: 500px;
-  // }
-
-  // .section {
-  //   &-row {
-  //     padding: 1em 10em;
-  //   }
-
-  //   &__title {
-  //     padding-top: 3.5em;
-  //   }
-
-  //   &__name {
-  //     font-size: .6em;
-  //   }
-  // }
-
-  // .block {
-  //   width: 50em;
-  //   margin: 0 auto;
-
-  //   &__item {
-  //     height: 300px;
-  //   }
-
-  // }
-
-  // .special-title {
-  //   margin-top: 2em;
-  //   font-size: 2.8em;
-  //   font-weight: 700;
-  //   padding: 0 7.4em;
-  // }
-  
-
-  // .partners {
-  //   &-container {
-  //     display: flex;
-  //     justify-content: space-around;
-  //   }
-
-  //   &__item {
-  //     width: 85px;
-
-  //     &-container {
-        
-  //       width: 20%;
-  //     }
-  //   }
-
-  //   &__profile img {
-  //     width: 100%;
-  //   }
-
-  //   &__icon {
-  //     width: 30px;
-  //     height: 30px;
-  //     line-height: 30px;
-  //     right: 0;
-  //   }
-
-  //   &__name {
-  //     margin: 1.5em 0;
-  //   }
-
-  //   &__button {
-  //     width: 14em;
-  //     padding: .6em;
-  //     font-size: .7em;
-  //     margin-top: 0;
-  //   }
-
-  //   &__text {
-  //     width: 200%;
-  //     margin-left: -45px;
-  //   }
-  // }
+      &-container {
+        width: 20%;
+      }
+    }
+  }
 
   .footer__item:last-child {
     margin-left: 16em;
@@ -312,5 +240,49 @@
     top: 10em;
   }
 
+  .partners {
+    // &-container {
+    //   display: flex;
+    //   justify-content: space-around;
+    // }
+
+    // &__item {
+    //   width: 85px;
+
+    //   &-container {
+        
+    //     width: 20%;
+    //   }
+    // }
+
+    // &__profile img {
+    //   width: 100%;
+    // }
+
+    // &__icon {
+    //   width: 30px;
+    //   height: 30px;
+    //   line-height: 30px;
+    //   right: 0;
+    // }
+
+    // &__name {
+    //   margin: 1.5em 0;
+    // }
+
+    // &__button {
+    //   width: 14em;
+    //   padding: .6em;
+    //   font-size: .7em;
+    //   margin-top: 0;
+    // }
+
+    &__text {
+      width: 200%;
+      margin-left: -45px;
+    }
+  }
+
 }
+
 
