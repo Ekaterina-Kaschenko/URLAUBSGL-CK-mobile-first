@@ -28,5 +28,10 @@
     font-size: inherit;
     color: $red;
     border: 2px solid $red; 
+
+    &:hover {
+      color: #fff;
+      background-color: $red;
+    }
   }
 }

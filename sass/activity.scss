@@ -11,8 +11,12 @@
     border-radius: 10px;
     margin-bottom: .6em;
     width: 100%;
-    // border: 3px solid red;
-    // box-sizing: border-box;
+    transition: .2s all ease;
+    
+    &:hover {
+      opacity: .5;
+      transition: .2s all ease;
+    }
   }
 
   &__title {

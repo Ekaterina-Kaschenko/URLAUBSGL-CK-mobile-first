@@ -15,4 +15,9 @@
 
 .flickity-prev-next-button {
   background: none !important;
+  display: none;
+}
+
+.flickity-prev-next-button .arrow {
+  fill: #d4d4d4;
 }

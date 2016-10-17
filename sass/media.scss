@@ -14,6 +14,8 @@
   }
 
   .section {
+    max-width: 948px;
+    margin: 0 auto;
     &-row {
       overflow: hidden;
       padding: 1em 1.5em;
@@ -44,6 +46,10 @@
       margin: 0;
     }
   }
+
+  .flickity-prev-next-button {
+    display: inline-block;
+  } 
 
   .big-button {
     width: 16em;
@@ -176,10 +182,15 @@
   }
 
   .footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 2em;
+    
     // margin-top: 5em;
+    &-section {
+      display: flex;
+      justify-content: space-between;
+      padding: 2em;
+      max-width: 948px;
+      margin: 0 auto;
+    }
 
     &__text {
       text-align: right;
@@ -204,97 +215,97 @@
 
 }
 
-@media only screen and (min-width: 1024px) {
-  body {
-    font-size: 14px;
-  }
+@media only screen and (min-width: 948px) {
+  // body {
+  //   font-size: 14px;
+  // }
 
-  .big-button {
-    width: 18em;
-    padding: .6em;
-  }
+  // .big-button {
+  //   width: 18em;
+  //   padding: .6em;
+  // }
 
-  .header {
-    min-height: 500px;
-  }
+  // .header {
+  //   min-height: 500px;
+  // }
 
-  .section {
-    &-row {
-      padding: 1em 10em;
-    }
+  // .section {
+  //   &-row {
+  //     padding: 1em 10em;
+  //   }
 
-    &__title {
-      padding-top: 3.5em;
-    }
+  //   &__title {
+  //     padding-top: 3.5em;
+  //   }
 
-    &__name {
-      font-size: .6em;
-    }
-  }
+  //   &__name {
+  //     font-size: .6em;
+  //   }
+  // }
 
-  .block {
-    width: 50em;
-    margin: 0 auto;
+  // .block {
+  //   width: 50em;
+  //   margin: 0 auto;
 
-    &__item {
-      height: 300px;
-    }
+  //   &__item {
+  //     height: 300px;
+  //   }
 
-  }
+  // }
 
-  .special-title {
-    margin-top: 2em;
-    font-size: 2.8em;
-    font-weight: 700;
-    padding: 0 7.4em;
-  }
+  // .special-title {
+  //   margin-top: 2em;
+  //   font-size: 2.8em;
+  //   font-weight: 700;
+  //   padding: 0 7.4em;
+  // }
   
 
-  .partners {
-    &-container {
-      display: flex;
-      justify-content: space-around;
-    }
+  // .partners {
+  //   &-container {
+  //     display: flex;
+  //     justify-content: space-around;
+  //   }
 
-    &__item {
-      width: 85px;
+  //   &__item {
+  //     width: 85px;
 
-      &-container {
+  //     &-container {
         
-        width: 20%;
-      }
-    }
+  //       width: 20%;
+  //     }
+  //   }
 
-    &__profile img {
-      width: 100%;
-    }
+  //   &__profile img {
+  //     width: 100%;
+  //   }
 
-    &__icon {
-      width: 30px;
-      height: 30px;
-      line-height: 30px;
-      right: 0;
-    }
+  //   &__icon {
+  //     width: 30px;
+  //     height: 30px;
+  //     line-height: 30px;
+  //     right: 0;
+  //   }
 
-    &__name {
-      margin: 1.5em 0;
-    }
+  //   &__name {
+  //     margin: 1.5em 0;
+  //   }
 
-    &__button {
-      width: 14em;
-      padding: .6em;
-      font-size: .7em;
-      margin-top: 0;
-    }
+  //   &__button {
+  //     width: 14em;
+  //     padding: .6em;
+  //     font-size: .7em;
+  //     margin-top: 0;
+  //   }
 
-    &__text {
-      width: 200%;
-      margin-left: -45px;
-    }
-  }
+  //   &__text {
+  //     width: 200%;
+  //     margin-left: -45px;
+  //   }
+  // }
 
   .footer__item:last-child {
-    margin-left: 20em;
+    margin-left: 16em;
   }
     
   .flickity-prev-next-button {

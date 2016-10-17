@@ -34,7 +34,7 @@ gulp.task('css', function() {
 
 gulp.task('css', function () {
     var processors = [
-        autoprefixer({browsers: ['last 2 versions', 'ie 8', 'ie 9']}),
+        autoprefixer({browsers: ['last 2 versions']}),
         flexibility(),
     ];
     return gulp.src('./css/**/*.css')
