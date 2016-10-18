@@ -166,7 +166,10 @@
       margin: 5px;
       background-size: cover !important;
       vertical-align: middle;
-
+      
+      & .section__title {
+        padding-top: 0;
+      }
 
       &--1 {
         width: 31%; 

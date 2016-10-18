@@ -549,6 +549,8 @@ a {
       margin: 5px;
       background-size: cover !important;
       vertical-align: middle; }
+      .activity__item .section__title {
+        padding-top: 0; }
       .activity__item--1 {
         width: 31%; }
       .activity__item--2 {
