@@ -390,27 +390,6 @@ a {
   .activity__title {
     color: #fff;
     padding: 0; }
-  .activity .sport {
-    background: url("../images/ideas_bg1.jpg") 100% 100% no-repeat;
-    background-size: cover; }
-  .activity .health {
-    background: url("../images/ideas_bg2.jpg") 100% 100% no-repeat;
-    background-size: cover; }
-  .activity .extreme {
-    background: url("../images/ideas_bg3.jpg") 100% 100% no-repeat;
-    background-size: cover; }
-  .activity .games {
-    background: url("../images/ideas_bg4.jpg") 100% 100% no-repeat;
-    background-size: cover; }
-  .activity .culture {
-    background: url("../images/ideas_bg5.jpg") 100% 100% no-repeat;
-    background-size: cover; }
-  .activity .relax {
-    background: url("../images/ideas_bg6.jpg") 100% 100% no-repeat;
-    background-size: cover; }
-  .activity .travelling {
-    background: url("../images/ideas_bg7.jpg") 100% 100% no-repeat;
-    background-size: cover; }
 
 .footer {
   border-top: 5px solid #ff4e50;

@@ -2,7 +2,10 @@
   'use strict'
   var button = document.getElementsByClassName('interest__button')[0];
   var input = document.getElementsByClassName('interest__input')[0];
-  // var container = document.getElementsByClassName('container')[0];
+  
+  window.onload = function initImage() {
+    apiRequest('cycling');
+  }
 
   button.addEventListener('click', function () {
     checkingEmptyValues();
@@ -12,7 +15,7 @@
     if (event.keyCode === 13) {
       event.preventDefault();
     }
-  })
+  });
 
   input.addEventListener('keyup', function (event) {
     event = event || window.event;
@@ -20,19 +23,20 @@
       checkingEmptyValues();
     }
   });
-
-  function checkingEmptyValues () {
-    if (input.value.trim() === '') {
-      input.value = '';
+  
+  function checkingEmptyValues (text) {
+    var text = input.value;
+    if (text.trim() === '') {
+      text = '';
       alert ('Введите поисковой запрос');
     } else {
-      apiRequest();
+      apiRequest(text);
     }
   }
 
-  function apiRequest() {
+
+  function apiRequest(text) {
     var API_KEY = '3347815-19a83d652fee52d8698f16eb6';
-    var text = input.value;
     var URL = "https://pixabay.com/api/?key="+API_KEY+"&q="+encodeURIComponent(text);
     var items = document.querySelectorAll('.activity__item');
     var request = new XMLHttpRequest();
@@ -43,10 +47,8 @@
     request.onload = function(data) {
       if (request.status >= 200 && request.status < 400) {
         var data = JSON.parse(request.responseText);
-        console.log(data.hits[0].userImageURL);
         Array.prototype.forEach.call(items, function(item, index) {
-          str = data.hits[index].userImageURL;
-          console.log(typeof str);
+          str = data.hits[index].webformatURL;
           item.style.background = "url('" + str + "') no-repeat";
           item.style.backgroundSize = 'cover';
         });
